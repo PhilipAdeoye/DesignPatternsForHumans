@@ -14,13 +14,13 @@ require_once 'SalariedEmployee.php';
 $sally = new HourlyEmployee();
 $ahmed = new HourlyEmployee();
 
-$ingvmar = new SalariedEmployee();
+$ingvar = new SalariedEmployee();
 $zubairu = new SalariedEmployee();
 
 echo 'Sally, an hourly, gets paid: ' .$sally->get_monthly_pay() .PHP_EOL;
 echo 'Ahmed, an hourly, gets paid: ' .$ahmed->get_monthly_pay() .PHP_EOL;
 
-echo 'Ingvmar, a salaried, gets paid: ' .$ingvmar->get_monthly_pay() .PHP_EOL;
+echo 'Ingvar, a salaried, gets paid: ' .$ingvar->get_monthly_pay() .PHP_EOL;
 echo 'Zubairu, a salaried, gets paid: ' .$zubairu->get_monthly_pay() .PHP_EOL;
 echo PHP_EOL;
 
@@ -30,7 +30,7 @@ $product_design_team->add_employee($sally);
 $developer_team = new Team();
 $developer_team
     ->add_employee($ahmed)
-    ->add_employee($ingvmar)
+    ->add_employee($ingvar)
     ->add_employee($zubairu);
 
 echo 'Product Design team gets paid: '. $product_design_team->get_monthly_pay(). PHP_EOL;
